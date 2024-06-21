@@ -24,7 +24,18 @@ Here are some screenshots of Task Tracker in action:
 <img src="img/8.PNG" alt="Screenshot 8" width="200px">
 <img src="img/9.PNG" alt="Screenshot 9" width="200px">
 
-## Getting Started
+## Getting Started with Docker
+
+1. Download the Docker Image
+    ```bash
+    docker pull ghcr.io/ombharamadev/tasktracker
+    ```
+2. Runt the Docker Image
+    ```bash
+    docker run -p 8000:8000 ghcr.io/ombharamadev/tasktracker
+    ```
+
+## Getting Started with CLI
 
 To get started with Task Tracker, follow these steps:
 
