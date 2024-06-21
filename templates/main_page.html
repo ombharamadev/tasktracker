@@ -166,7 +166,7 @@
 
             <script>
                 document.addEventListener('DOMContentLoaded', function() {
-                    fetch('http://localhost:8000/api/gettasklist?format=json')
+                    fetch('/api/gettasklist?format=json')
                         .then(response => response.json())
                         .then(data => {
                             const tableBody = document.getElementById('tablebody');
@@ -189,7 +189,7 @@
                                 tableBody.appendChild(row);
         
                                 // Fetch assign emails for this task_id
-                                fetch(`http://localhost:8000/api/getassignlist?format=json&task_id=${task.task_id}`)
+                                fetch(`/api/getassignlist?format=json&task_id=${task.task_id}`)
                                     .then(response => response.json())
                                     .then(assignData => {
                                         const assignEmailCell = document.getElementById(`assignEmail_${task.task_id}`);
